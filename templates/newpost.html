@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="tbar"></div>
+
+<div id="wrap">
+	<div id="header">
+		<div class="left">
+			<a href="/"><h1>Blog it.</h1></a>
+		</div>
+		<div class="hbox2 right">
+		</div>
+	</div>
+	
+	<div id="content">
+		<div class="entry">
+			<div class="etitle">
+				New blog post
+			</div>
+			<div class="epbody">
+				<form method="post">
+					<input name="subject" class="posttitle" type="text" placeholder="Title" value="{{subject}}">
+					<br>
+					<textarea name="content" class="postcontent" placeholder="Content">{{content}}</textarea>
+					<br>
+					<input type="submit">
+				</form>
+				<br>
+				<div class="error">&nbsp;{{error}}</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="footer">
+		{{ndate}}&copy; 2013 My Blog
+	</div>
+	
+</div>
+
+
+</bodY>
+</html>

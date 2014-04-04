@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="tbar"></div>
+
+<div id="wrap">
+	<div id="header">
+		<div class="left">
+			<a href="/"><h1>Blog it.</h1></a>
+		</div>
+		<div class="hbox2 right">
+		</div>
+	</div>
+	
+	<div id="content">
+		<div class="entry">
+			<div class="etitle">
+				{{post.subject}}
+				<span class="date">{{post.created}}</span>
+			</div>
+			<div class="ebody">{{post.content}}</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		Queried {{update}} seconds ago&nbsp;|&nbsp;{{ndate}}&nbsp;|&nbsp;&copy; 2013 My Blog
+	</div>
+	
+</div>
+
+
+</bodY>
+</html>

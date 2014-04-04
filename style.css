@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#wrap {
+	border-radius: 0.5em;
+	border: 1px solid silver;
+	box-shadow: 2px 2px 5px silver;
+	width: 960px;
+	margin: auto;
+	font: 18px "Segoe UI", sans-serif;
+	padding: 1em;
+	padding-bottom: 26px;
+	color: #333;
+}
+#content {
+	padding: 1em;
+	color: #555;
+}
+.entry {
+	position: relative;
+	margin: 1em;
+	width: 600px;
+}
+#content div {
+
+}
+#footer {
+	font-size: 12px;
+	float: right;
+	color: #aaa;
+}
+
+.tbar {
+	background-color: #888;
+	border-bottom: #ccc;
+	height: 0.6em;
+	width: 100%;
+	left: 0; top: 0;
+	position: absolute;
+	z-index: 999;
+}
+
+#header {
+	margin-top: 0.5em;
+	box-shadow: 0 2px 1px -1px silver;
+	overflow: hidden;
+}
+h1 {
+	margin: 0;
+	font: 48px Cambria, serif;
+}
+
+#wrap > div { } 
+.left { float: left; }
+.right { float: right; }
+.hbox2 {
+	margin-top: 2em;
+}
+.etitle {
+	font: 18px Cambria, sans-serif;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.ebody {
+	padding: 1em;
+	padding-left: 0.5em;
+	font-size: 14px;
+}
+.date { float: right; font-size: 14px; bottom:0; right:0; position: absolute;}
+form { margin:0;}
+
+.posttitle {
+	width: 400px;
+}
+.postcontent {
+	font: 14px "Segoe UI", sans-serif;
+	margin-top: 0.6em;
+	width: 400px;
+	height: 300px;
+	border: 1px solid #aaa;
+}
+.error {
+	color: red;
+}
+a{ text-decoration: none; color: #222;}
+a:active, a:hover { color: #999;}

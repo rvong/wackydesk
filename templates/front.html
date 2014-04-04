@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="tbar"></div>
+
+<div id="wrap">
+	<div id="header">
+		<div class="left">
+			<a href="/"><h1>Here is My Blog</h1></a>
+		</div>
+		<div class="hbox2 right">
+			<span class="status">{{status}}</span>
+			<A href="/flush">Flush</a> |  
+			<A href="/login">Login</a> | 
+			<A href="/logout">Logout</a> | 
+			<A href="/signup">Sign Up</a> | 
+			<a href="/newpost">New Post</a>
+		</div>
+	</div>
+	
+	<div id="content">
+		{% for post in posts %}
+		<div class="entry">
+			<div class="etitle">
+				<a href="/post/{{post.key().id()}}">{{post.subject}}</a>
+				<span class="date">{{post.created}}</span>
+			</div>
+			<div class="ebody">{{post.content}}</div>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div id="footer">
+		Queried {{update}} seconds ago &nbsp;|&nbsp;{{ndate}}&nbsp;|&nbsp;&copy; 2013 My Blog
+	</div>
+	
+</div>
+
+
+</bodY>
+</html>
